@@ -17,7 +17,9 @@ const reducer = (state = initialState, action) => {
         case actionTypes.DELETE_RESULT:
             // const newArray = [...state.results]
             // newArray.splice(id, 1)
-            const newArray = state.results.filter((el) => el.id !== action.id)
+            const newArray = state.results.filter(
+                (el) => el.id !== action.id
+            )
 
             return {
                 ...state,
